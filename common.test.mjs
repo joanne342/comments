@@ -1,4 +1,3 @@
-```javascript
 // Import the strict assertion module from Node.js.
 //
 // The assert module provides functions that allow tests to check whether
@@ -245,4 +244,4 @@ test("rejects an invalid weekday", () => {
     /Unknown weekday/
   );
 });
-```
+
