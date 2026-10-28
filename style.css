@@ -1,0 +1,134 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 20px;
+  color: #222;
+}
+
+main {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.date-picker {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 24px 0;
+}
+
+select,
+input,
+button {
+  font: inherit;
+  padding: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.calendar-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0;
+}
+
+.calendar-controls h2 {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 5px;
+}
+
+.weekday {
+  text-align: center;
+  font-weight: bold;
+  padding: 10px 2px;
+  background-color: #e8e8e8;
+}
+
+.calendar-day {
+  border: 1px solid #ccc;
+  padding: 8px;
+  min-width: 0;
+  min-height: 85px;
+  overflow-wrap: anywhere;
+}
+
+.day-number {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.commemorative-day {
+  display: block;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #e5f1ff;
+  border-radius: 4px;
+  font-size: 0.85rem;
+}
+
+button:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 3px solid #b45309;
+  outline-offset: 2px;
+}
+
+@media (max-width: 600px) {
+  body {
+    margin: 8px;
+  }
+
+  main {
+    padding: 8px;
+  }
+
+  .calendar-controls {
+    gap: 5px;
+  }
+
+  .calendar-controls button {
+    padding: 8px 4px;
+    font-size: 0.8rem;
+  }
+
+  .calendar-controls h2 {
+    font-size: 1rem;
+  }
+
+  .weekday {
+    font-size: 0.7rem;
+    padding: 8px 0;
+    overflow-wrap: anywhere;
+  }
+
+  .calendar-day {
+    padding: 4px;
+    min-height: 65px;
+  }
+
+  .commemorative-day {
+    padding: 3px;
+    font-size: 0.7rem;
+  }
+}
