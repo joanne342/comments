@@ -1,4 +1,4 @@
-```js
+
 // Import the assert module from Node.js.
 // This module provides functions for checking whether values match
 // expected results. If an assertion fails, Node.js reports an error,
@@ -174,4 +174,4 @@ test("Sorting handles empty collections and numeric timestamps", () => {
     ]
   );
 });
-```
+
