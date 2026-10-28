@@ -1,4 +1,4 @@
-```js
+
 // Define and export a function that returns the IDs of all users
 // available in this application's dataset.
 //
@@ -241,4 +241,4 @@ export function getListenEvents(userID) {
     // undefined because no matching user entry exists.
     }[userID];
 }
-```
+
